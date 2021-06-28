@@ -1,0 +1,161 @@
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <base href="/">
+    <title>ATOMICNETWORKS — POWERED BY COMMUNITY!</title>
+    <link rel="icon" type="image/png" href="https://atomicnetworks.eu/assets/favicon.png" sizes="32x32">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+	<meta name="robots" content="NOINDEX,NOFOLLOW">
+    <link rel="stylesheet" href="https://atomicnetworks.eu/assets/bootstrap.min.css">
+    <style>	
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 300;
+            font-display: swap;
+            src: url(https://atomicnetworks.eu/assets/light.woff2) format('woff2');
+        }
+
+        @font-face {
+            font-family: 'Poppins';
+            font-style: normal;
+            font-weight: 700;
+            font-display: swap;
+            src: url(https://atomicnetworks.eu/assets/bold.woff2) format('woff2');
+        }
+
+        body {
+            background-color: #13171b;
+        }
+
+        .modal-body {
+            border-radius: 4px;
+            width: 100%;
+            padding-top: 32px;
+            padding-left: 40px;
+            padding-right: 40px;
+            padding-bottom: 32px;
+        }
+
+        .modal-title {
+			font-family: Poppins;
+            font-size: 20px;
+            font-weight: 700;
+            line-height: 1.5;
+            color: white;
+            display: block;
+        }
+
+        .modal-description {
+			font-family: Poppins;
+            font-size: 16px;
+            font-weight: 400;
+            line-height: 1.6;
+            color: #c7ccd1;
+        }
+
+        .notfound {
+            width: 640px;
+            margin-top: 81px;
+            margin-right: auto;
+            margin-left: auto;
+        }
+
+        .notfound h1 {
+            font-size: 1.5rem !important;
+            font-weight: 700;
+        }
+
+        .notfound h2 {
+            margin-top: -7px;
+        }
+
+        .notfound p {
+            font-size: 16px;
+            font-weight: 400;
+            margin-top: -8px;
+        }
+
+        .limitations {
+            background: #dc3545;
+            padding: 23px;
+            border-radius: 6px;
+            color: #fff;
+            max-height: 105px;
+            margin-bottom: 40px;
+        }
+
+        .limitations i {
+            font-size: 30px;
+            float: left;
+            padding-right: 20px;
+        }
+
+        .limitations h2 {
+            font-size: 20px;
+            font-weight: 700;
+            padding-left: 54px;
+        }
+
+        .limitations p {
+            padding-left: 54px;
+        }
+
+        .footer {
+            margin-top: 60px;
+            text-align: center;
+        }
+
+        .footer a {
+            color: #000;
+        }
+
+        @media (max-width: 1200px) {
+            .notfound {
+                width: 342px;
+                margin-top: 70px;
+                margin-right: auto;
+                margin-left: auto;
+            }
+
+            .limitations {
+                background: #dc3545;
+                padding: 23px;
+                border-radius: 6px;
+                color: #fff;
+                max-height: 128px;
+                margin-bottom: 40px;
+            }
+        }
+    </style>
+</head>
+
+<body>
+    <audio id="audio" autoplay="true" loop="true" style="display:none">
+        <source src="https://atomicnetworks.eu/assets/audio" type="audio/mpeg">
+    </audio>
+	
+    <div class="container notfound">
+        <div class="modal-body">
+            <span class="modal-title" id="sound" style="cursor: pointer;">Goodbye. 👋 <p id="sound" style="color: #c7ccd1;padding-top: 5px;cursor: pointer;">CLICK ME!</p></span>
+            <span class="modal-description"><br>Teenagers who wanted to entertain other people their age.<br><br>That was exactly what made us special, we outperformed other projects with more features and higher standards despite a huge age difference, although we actually just wanted to pursue our hobby and entertain other people our age. At some point sponsors and partners became aware of us and started to support us, we were about to enter the analog sector and monetize our projects, but we refused. Because we already knew at that time that the project would not exist permanently.<br><br>And we were right, today we announce that our project opens its doors for the last time, but that's not bad, because that means that it goes on for all of us, many of us now start their professional life or concentrate on their last years of school to achieve the best possible degree. Unfortunately, there is no time left for such a time-consuming hobby like atomicnetworks and we didn't want to see the project die out for these reasons. Instead, all our presences now refer to projects with at least as much dedication and attention to detail as ours.<br><br><b>Thanks to each and every one of you, we will miss you!</b> 💜</span>
+        </div>
+    </div>
+
+    <script>
+        const audio = document.querySelector("audio"),
+            button = document.getElementById("sound");
+        let playing = false;
+        audio.volume = 0.4;
+        button.addEventListener("click", event => {
+            if(playing) {
+                audio.pause();
+                playing = false;
+                return;
+            }
+            audio.play();
+            playing = true;
+        });
+    </script>
+</body>
